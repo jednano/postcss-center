@@ -5,8 +5,9 @@ function loadTask(taskName) {
 }
 
 gulp.task('default', ['eslint']);
-gulp.task('eslint', ['scripts'], loadTask('eslint'));
+gulp.task('eslint', ['build'], loadTask('eslint'));
 gulp.task('eslint:no-clean', ['scripts:no-clean'], loadTask('eslint'));
+gulp.task('build', ['scripts'], loadTask('babel'));
 gulp.task('scripts', ['clean', 'tslint'], loadTask('scripts'));
 gulp.task('scripts:no-clean', ['tslint'], loadTask('scripts'));
 gulp.task('clean', loadTask('clean'));
