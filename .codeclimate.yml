@@ -4,4 +4,5 @@ engines:
 
 ratings:
   paths:
-  - "build/**/*.js"
+  - "lib/**/*.js"
+  - "test/**/*.js"
