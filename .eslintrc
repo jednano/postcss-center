@@ -25,10 +25,10 @@
 		"no-negated-in-lhs": 2,
 		"no-obj-calls": 2,
 		"no-regex-spaces": 2,
-		"no-reserved-keys": 2,
 		"no-sparse-arrays": 2,
 		"no-unexpected-multiline": 2,
 		"no-unreachable": 2,
+		"quote-props": [2, "as-needed"],
 		"use-isnan": 2,
 		"valid-typeof": 2,
 
@@ -91,7 +91,7 @@
 		"eol-last": 2,
 		"func-style": [2, "declaration"],
 		"indent": [2, "tab", {
-			"indentSwitchCase": true
+			"SwitchCase": 1
 		}],
 		"key-spacing": 2,
 		"lines-around-comment": 2,

@@ -1,3 +1,4 @@
+///<reference path="../../es6-promise/es6-promise.d.ts" />
 import Declaration from './declaration';
 import Processor from './processor';
 import Comment from './comment';
@@ -6,6 +7,7 @@ import Node from './node';
 import Result from './result';
 import Rule from './rule';
 import Root from './root';
+import RSVP from 'es6-promise';
 declare function postcss(plugins?: (postcss.Plugin | postcss.Transformer | Processor)[]): Processor;
 declare module postcss {
     /**
@@ -21,7 +23,7 @@ declare module postcss {
         postcss: Transformer;
     }
     interface Transformer {
-        (root: Root, result?: Result): void | Promise<void>;
+        (root: Root, result?: Result): void | RSVP.Promise<void>;
         postcssPlugin?: string;
         postcssVersion?: string;
     }

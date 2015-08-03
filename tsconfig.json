@@ -3,6 +3,8 @@
     "target": "es6",
     "declaration": true,
     "newLine": "LF",
-    "noResolve": true
+    "noResolve": true,
+    "outDir": "build",
+    "rootDir": "."
   }
 }

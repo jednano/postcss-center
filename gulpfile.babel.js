@@ -5,11 +5,11 @@ function loadTask(taskName) {
 }
 
 gulp.task('default', ['eslint']);
-gulp.task('eslint', ['build'], loadTask('eslint'));
-gulp.task('eslint:no-clean', ['scripts:no-clean'], loadTask('eslint'));
-gulp.task('build', ['scripts'], loadTask('babel'));
-gulp.task('scripts', ['clean', 'tslint'], loadTask('scripts'));
-gulp.task('scripts:no-clean', ['tslint'], loadTask('scripts'));
+gulp.task('eslint', ['typescript'], loadTask('eslint'));
+gulp.task('eslint:no-clean', ['typescript:no-clean'], loadTask('eslint'));
+gulp.task('typescript', ['clean', 'tslint'], loadTask('typescript'));
+gulp.task('typescript:no-clean', ['tslint'], loadTask('typescript'));
 gulp.task('clean', loadTask('clean'));
 gulp.task('tslint', loadTask('tslint'));
-gulp.task('watch', ['scripts'], loadTask('watch'));
+gulp.task('watch', ['typescript'], loadTask('watch'));
+gulp.task('copy', loadTask('copy'));

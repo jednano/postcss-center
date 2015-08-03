@@ -1,4 +1,4 @@
 declare module 'postcss-center' {
-	import * as plugin from 'dist/d.ts/lib/plugin';
+	import plugin from 'dist/plugin';
 	export default plugin;
 }

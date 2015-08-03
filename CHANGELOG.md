@@ -1,3 +1,6 @@
+## 0.0.6
+- Move scripts to package.json.
+
 ## 0.0.5
 - Don't npm ignore .d.ts.
 

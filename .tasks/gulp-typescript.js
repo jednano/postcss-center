@@ -12,13 +12,13 @@ export default () => {
 				'lib/**/*.ts',
 				'test/**/*.ts'
 			],
-			{ base: '.' })
+			{ base: compilerOptions.rootDir })
 		.pipe(ts(compilerOptions));
 
 	return merge(
 		libResult.dts
 			.pipe(filter(['**', '!test/**']))
-			.pipe(gulp.dest('dist/d.ts')),
-		libResult.js.pipe(gulp.dest('build'))
+			.pipe(gulp.dest(compilerOptions.outDir)),
+		libResult.js.pipe(gulp.dest(compilerOptions.outDir))
 	);
 };
