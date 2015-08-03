@@ -1,4 +1,5 @@
 .*
+!.d.ts
 *.sln*
 *.suo
 build/

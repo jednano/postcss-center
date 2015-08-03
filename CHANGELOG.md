@@ -1,3 +1,6 @@
+## 0.0.5
+- Don't npm ignore .d.ts.
+
 ## 0.0.4
 - npm ignore scripts.
 
