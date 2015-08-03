@@ -4,13 +4,10 @@
 	title="Philosopher’s stone, logo of PostCSS"
 	src="http://postcss.github.io/postcss/logo-leftp.png">
 
-[![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-center.svg?label=unix%20build)](https://travis-ci.org/jedmao/postcss-center)
-[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/jedmao/postcss-center.svg?label=windows%20build)](https://ci.appveyor.com/project/jedmao/postcss-center)
-[![npm version](https://badge.fury.io/js/postcss-center.svg)](http://badge.fury.io/js/postcss-center)
+[![NPM version](http://img.shields.io/npm/v/postcss-center.svg?style=flat)](https://www.npmjs.org/package/postcss-center)
 [![npm license](http://img.shields.io/npm/l/postcss-center.svg?style=flat-square)](https://www.npmjs.org/package/postcss-center)
-
-[![Code Climate](https://codeclimate.com/github/jedmao/postcss-center/badges/gpa.svg)](https://codeclimate.com/github/jedmao/postcss-center)
-[![Test Coverage](https://codeclimate.com/github/jedmao/postcss-center/badges/coverage.svg)](https://codeclimate.com/github/jedmao/postcss-center)
+[![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-center.svg?label=unix)](https://travis-ci.org/jedmao/postcss-center)
+[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/jedmao/postcss-center.svg?label=windows)](https://ci.appveyor.com/project/jedmao/postcss-center)
 
 [![npm](https://nodei.co/npm/postcss-center.svg?downloads=true)](https://nodei.co/npm/postcss-center/)
 
