@@ -1,6 +1,7 @@
 *.log
 .vs/
-build/
+build/**/*.js
+build/**/*.ts
 coverage/
 dist/
 node_modules/
