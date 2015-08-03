@@ -1,3 +1,6 @@
+## 0.0.7
+- Remove CodeClimate integration.
+
 ## 0.0.6
 - Move scripts to package.json.
 

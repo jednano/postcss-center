@@ -1,6 +1,6 @@
 {
   "name": "postcss-center",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "PostCSS plugin to center elements.",
   "main": "dist/plugin.js",
   "scripts": {
