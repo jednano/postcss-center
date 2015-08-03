@@ -1,3 +1,6 @@
+## 0.0.4
+- npm ignore scripts.
+
 ## 0.0.3
 - Reorganize files.
 
