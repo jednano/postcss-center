@@ -1,5 +1,11 @@
 import gulp from 'gulp';
 
 export default () => {
-	gulp.watch('src/**/*.ts', ['eslint:no-clean']);
+	gulp.watch(
+		[
+			'lib/**/*.ts',
+			'test/**/*.ts'
+		],
+		['eslint:no-clean']
+	);
 }

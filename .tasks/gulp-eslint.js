@@ -5,8 +5,7 @@ import eslint from 'gulp-eslint';
 export default () => {
 	return gulp.src([
 		'gulpfile.babel.js',
-		'lib/**/*.js',
-		'test/**/*.js'
+		'build/**/*.js'
 	])
 		.pipe(plumber())
 		.pipe(eslint())

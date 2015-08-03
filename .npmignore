@@ -1,10 +1,12 @@
 .*
 *.sln*
 *.suo
+build/
 coverage/
-scripts/
-src/
+lib/
 test/
+!dist/lib
+!dist/d.ts/lib
 typings/chai/
 typings/mocha/
 typings/sinon/
