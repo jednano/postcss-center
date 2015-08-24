@@ -1,3 +1,6 @@
+## 1.0.0
+- Supports PostCSS 5.x.
+
 ## 0.0.7
 - Remove CodeClimate integration.
 
@@ -17,4 +20,4 @@
 - Fix npm package.
 
 ## 0.0.1
-- Initial release.
+- Supports PostCSS 4.x.

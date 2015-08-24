@@ -1,12 +1,12 @@
-﻿///<reference path="../typings/postcss/.d.ts" />
+﻿///<reference path="../node_modules/postcss/postcss.d.ts" />
 import postcss from 'postcss';
 
 // ReSharper disable once UnusedLocals
 export default postcss.plugin('postcss-center', () => {
 	return root => {
-		root.eachRule(rule => {
+		root.walkRules(rule => {
 			let top;
-			rule.eachDecl('top', decl => {
+			rule.walkDecls('top', decl => {
 				if (decl.value !== 'center') {
 					return;
 				}
@@ -15,7 +15,7 @@ export default postcss.plugin('postcss-center', () => {
 			});
 
 			let left;
-			rule.eachDecl('left', decl => {
+			rule.walkDecls('left', decl => {
 				if (decl.value !== 'center') {
 					return;
 				}
@@ -28,12 +28,12 @@ export default postcss.plugin('postcss-center', () => {
 			}
 
 			let position;
-			rule.eachDecl('position', decl => {
+			rule.walkDecls('position', decl => {
 				if (/^(absolute|relative|fixed)$/.test(decl.value)) {
 					position = decl.value;
 					return;
 				}
-				decl.removeSelf();
+				decl.remove();
 			});
 
 			if (!position) {
