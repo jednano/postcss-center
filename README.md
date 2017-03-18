@@ -6,8 +6,10 @@
 
 [![NPM version](http://img.shields.io/npm/v/postcss-center.svg?style=flat)](https://www.npmjs.org/package/postcss-center)
 [![npm license](http://img.shields.io/npm/l/postcss-center.svg?style=flat-square)](https://www.npmjs.org/package/postcss-center)
-[![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-center.svg?label=unix)](https://travis-ci.org/jedmao/postcss-center)
-[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/jedmao/postcss-center.svg?label=windows)](https://ci.appveyor.com/project/jedmao/postcss-center)
+[![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-center.svg)](https://travis-ci.org/jedmao/postcss-center)
+[![codecov](https://codecov.io/gh/jedmao/postcss-center/branch/master/graph/badge.svg)](https://codecov.io/gh/jedmao/postcss-center)
+[![Dependency Status](https://gemnasium.com/badges/github.com/jedmao/postcss-center.svg)](https://gemnasium.com/github.com/jedmao/postcss-center)
+[![CircleCI](https://circleci.com/gh/jedmao/postcss-center.svg?style=svg)](https://circleci.com/gh/jedmao/postcss-center)
 
 [![npm](https://nodei.co/npm/postcss-center.svg?downloads=true)](https://nodei.co/npm/postcss-center/)
 
@@ -92,22 +94,15 @@ $ npm install postcss-center
 ### JavaScript
 
 ```js
-postcss([
-	require('postcss-center'),
-	// more plugins...
-])
+postcss([ require('postcss-center') ]);
 ```
 
 ### TypeScript
 
 ```ts
-///<reference path="node_modules/postcss-center/.d.ts" />
-import postcssCenter = require('postcss-center');
+import * as postcssCenter from 'postcss-center';
 
-postcss([
-	postcssCenter,
-	// more plugins...
-])
+postcss([ postcssCenter ]);
 ```
 
 ## Options
