@@ -9,7 +9,6 @@
 [![Travis Build Status](https://img.shields.io/travis/jedmao/postcss-center.svg)](https://travis-ci.org/jedmao/postcss-center)
 [![codecov](https://codecov.io/gh/jedmao/postcss-center/branch/master/graph/badge.svg)](https://codecov.io/gh/jedmao/postcss-center)
 [![Dependency Status](https://gemnasium.com/badges/github.com/jedmao/postcss-center.svg)](https://gemnasium.com/github.com/jedmao/postcss-center)
-[![CircleCI](https://circleci.com/gh/jedmao/postcss-center.svg?style=svg)](https://circleci.com/gh/jedmao/postcss-center)
 
 [![npm](https://nodei.co/npm/postcss-center.svg?downloads=true)](https://nodei.co/npm/postcss-center/)
 
