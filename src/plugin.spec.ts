@@ -3,9 +3,7 @@ import * as postcss from 'postcss';
 
 import * as plugin from './plugin';
 
-test(
-	'top: center; transpiles into expected declarations',
-	macro,
+test('top: center; transpiles into expected declarations', macro,
 	`foo {
 		top: center;
 	}`,
@@ -49,9 +47,7 @@ test(
 	);
 });
 
-test(
-	'top: center; removes position: static and inserts a new position',
-	macro,
+test('top: center; removes position: static and inserts a new position', macro,
 	`foo {
 		top: center;
 		position: static;
@@ -63,9 +59,7 @@ test(
 	}`
 );
 
-test(
-	'left: center; transpiles into expected declarations',
-	macro,
+test('left: center; transpiles into expected declarations', macro,
 	`foo {
 		left: center;
 	}`,
@@ -77,9 +71,7 @@ test(
 	}`
 );
 
-test(
-	'left: center; omits margin-right: -50% if position is relative',
-	macro,
+test('left: center; omits margin-right: -50% if position is relative', macro,
 	`foo {
 		position: relative;
 		left: center;
@@ -91,9 +83,7 @@ test(
 	}`
 );
 
-test(
-	'top: center; left: center; transpiles into expected declarations',
-	macro,
+test('top: center; left: center; transpiles into expected declarations', macro,
 	`foo {
 		top: center;
 		left: center;
@@ -107,9 +97,7 @@ test(
 	}`
 );
 
-test(
-	'top: 10px; left: 20px; passes through w/o modification',
-	macro,
+test('top: 10px; left: 20px; passes through w/o modification', macro,
 	`foo {
 		top: 10px;
 		left: 20px;
@@ -136,8 +124,7 @@ function macro(
 		processor.process(stripTabs(input)).css,
 		stripTabs(<string>expected)
 	);
-}
-
-function stripTabs(input: string) {
-	return input.replace(/\t/g, '');
+	function stripTabs(input: string) {
+		return input.replace(/\t/g, '');
+	}
 }
