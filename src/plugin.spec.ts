@@ -1,4 +1,4 @@
-﻿import test, { ContextualTestContext } from 'ava';
+﻿import test, { TestContext } from 'ava';
 import * as postcss from 'postcss';
 
 import * as plugin from './plugin';
@@ -109,7 +109,7 @@ test('top: 10px; left: 20px; passes through w/o modification', macro,
 );
 
 function macro(
-	t: ContextualTestContext,
+	t: TestContext,
 	input: string,
 	expected?: string|RegExp
 ) {
